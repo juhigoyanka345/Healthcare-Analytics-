@@ -1,0 +1,51 @@
+
+OASIS-1 EXPLAINABLE MACHINE LEARNING PROJECT
+============================================
+
+Dataset records after preprocessing: 235
+Non-dementia records: 135
+Dementia records: 100
+
+Primary features:
+Age, M/F, Educ, SES, eTIV, nWBV, ASF
+
+Target:
+CDR = 0 -> Non-Dementia
+CDR > 0 -> Dementia
+
+Baseline:
+Logistic Regression
+
+Proposed:
+Class-weighted Random Forest + F2-based threshold optimization
+
+Optimal threshold:
+0.2500
+
+Baseline ROC-AUC:
+0.8963
+
+Proposed ROC-AUC:
+0.8630
+
+Proposed sensitivity:
+1.0000
+
+Proposed specificity:
+0.4444
+
+Proposed F1:
+0.7273
+
+Proposed F2:
+0.8696
+
+Top features by permutation importance:
+nWBV, Age, Educ, M/F, eTIV
+
+SHAP:
+Generated successfully
+
+IMPORTANT:
+This project is an educational/research machine-learning experiment.
+It is not a clinical diagnostic system.
